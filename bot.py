@@ -6,8 +6,8 @@ import pytz
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
 
-bot_token = "MTA2MjA2ODQ1MDYxNDMzMzU5MA.GWURTt.yfWWlWuffdeUOnPDBOc0lK2kIspoy9b_j3iJuY"
-channel_id = 1062067867073380365
+bot_token = "" # Bot token
+channel_id = 0 # Channel ID here
 
 @client.event
 async def on_ready():
