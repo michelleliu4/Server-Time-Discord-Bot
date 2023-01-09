@@ -6,9 +6,8 @@ import pytz
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
 
-distoken = "MTA2MjA2ODQ1MDYxNDMzMzU5MA.GWURTt.yfWWlWuffdeUOnPDBOc0lK2kIspoy9b_j3iJuY"
-
-timechannel = 1062067867073380365
+bot_token = "MTA2MjA2ODQ1MDYxNDMzMzU5MA.GWURTt.yfWWlWuffdeUOnPDBOc0lK2kIspoy9b_j3iJuY"
+channel_id = 1062067867073380365
 
 @client.event
 async def on_ready():
@@ -20,9 +19,9 @@ async def on_ready():
 
         twelve_hour = mcst.strftime("%I:%M %p")
 
-        await client.get_channel(timechannel).edit(name=f"{twelve_hour} MCST")
+        await client.get_channel(channel_id).edit(name=f"{twelve_hour} MCST")
         # Avoid Discord API issues by updating every 5 min
         await asyncio.sleep(300)
 
 
-client.run(distoken)
+client.run(bot_token)
