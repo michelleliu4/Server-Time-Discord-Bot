@@ -9,3 +9,4 @@ Currently used for MCST bot on Mathcamp Discord.
 - Change `bot_token` to Discord bot token
 - Change `channel_id` to the Discord voice channel ID to display time
 - Change `timezone` to reflect timezone
+- To deploy the bot on replit use `replit_bot.py`
